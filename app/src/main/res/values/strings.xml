@@ -1,0 +1,11 @@
+<resources>
+    <!--Product Fragment-->
+    <string name="app_name">ShopNow</string>
+    <string name="product">Product</string>
+    <string name="cart">Cart</string>
+    <string name="addtocart">Add to Cart</string>
+    <!--Cart Fragment-->
+    <string name="call_vendor">Call Vendor</string>
+    <string name="remove_cart">Remove from Cart</string>
+    <string name="receiver_filter">com.shop.product.change</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_marginTop="@dimen/top_margin"
+                style="@style/BigTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tvVendorName"
+                style="@style/NormalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tvVendorAddress"
+                style="@style/NormalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name" />
+
+            <Button
+                android:id="@+id/btnAddToCart"
+                style="@style/NormalButtonView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:text="@string/addtocart" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

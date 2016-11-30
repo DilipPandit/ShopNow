@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_vertical_margin">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivProduct"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="@dimen/top_margin"
+                    android:layout_weight="40"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvProductName"
+                        style="@style/BigTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="@dimen/top_margin"
+                        android:text="@string/app_name" />
+
+
+                    <TextView
+                        android:id="@+id/tvVendorName"
+                        style="@style/NormalTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="@dimen/top_margin"
+                        android:text="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/tvVendorAddress"
+                        style="@style/NormalTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="@string/app_name" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvProductPrice"
+                    style="@style/SmallTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:layout_weight="20"
+                    android:text="@string/app_name" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnCallVender"
+                    style="@style/NormalButtonView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/top_margin"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:layout_weight="1"
+                    android:text="@string/call_vendor" />
+
+                <Button
+                    android:id="@+id/btnRemoveProduct"
+                    style="@style/NormalButtonView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/top_margin"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:layout_weight="1"
+                    android:text="@string/remove_cart" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
