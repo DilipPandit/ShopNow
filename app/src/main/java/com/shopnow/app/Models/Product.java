@@ -1,9 +1,12 @@
 package com.shopnow.app.Models;
 
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.orm.SugarRecord;
 
-public class Product extends SugarRecord {
+public class Product extends SugarRecord implements Parcelable {
 
 
     String productname;
@@ -13,7 +16,10 @@ public class Product extends SugarRecord {
     String productImg;
     String[] productGallery;
     String phoneNumber;
+    public Product()
+    {
 
+    }
     public String getProductname() {
         return productname;
     }
@@ -71,4 +77,40 @@ public class Product extends SugarRecord {
     }
 
 
+    protected Product(Parcel in) {
+        productname = in.readString();
+        price = in.readInt();
+        vendorname = in.readString();
+        vendoraddress = in.readString();
+        productImg = in.readString();
+        phoneNumber = in.readString();
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(productname);
+        dest.writeInt(price);
+        dest.writeString(vendorname);
+        dest.writeString(vendoraddress);
+        dest.writeString(productImg);
+        dest.writeString(phoneNumber);
+    }
+
+    @SuppressWarnings("unused")
+    public static final Parcelable.Creator<Product> CREATOR = new Parcelable.Creator<Product>() {
+        @Override
+        public Product createFromParcel(Parcel in) {
+            return new Product(in);
+        }
+
+        @Override
+        public Product[] newArray(int size) {
+            return new Product[size];
+        }
+    };
 }

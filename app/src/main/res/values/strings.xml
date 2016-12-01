@@ -4,8 +4,15 @@
     <string name="product">Product</string>
     <string name="cart">Cart</string>
     <string name="addtocart">Add to Cart</string>
+    <string name="no_internet">No Internet connection</string>
+    <string name="pro_added">Product added to cart</string>
+    <string name="loading">Loading...</string>
     <!--Cart Fragment-->
     <string name="call_vendor">Call Vendor</string>
     <string name="remove_cart">Remove from Cart</string>
     <string name="receiver_filter">com.shop.product.change</string>
+    <string name="pro_remove">Product deleted from cart</string>
+    <string name="no_record">No Record</string>
+    <string name="total">Total : </string>
+    <string name="permission">Permission denied</string>
 </resources>

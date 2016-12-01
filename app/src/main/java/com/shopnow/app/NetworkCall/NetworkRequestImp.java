@@ -19,7 +19,7 @@ public class NetworkRequestImp {
 
     public void NetworkObjectRequest(String url, Context context, final NetworkRequest networkRequest) {
         final ProgressDialog pDialog = new ProgressDialog(context);
-        pDialog.setMessage("Loading...");
+        pDialog.setMessage(context.getString(R.string.loading));
         pDialog.show();
 
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,

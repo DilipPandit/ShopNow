@@ -1,5 +1,4 @@
 package com.shopnow.app.Application;
-import android.app.Application;
 import android.text.TextUtils;
 
 import com.android.volley.Request;

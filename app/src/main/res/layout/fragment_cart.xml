@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/tvNoRecord"
+        style="@style/BigWhiteTextView"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/no_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        style="@style/NormalTextView2"
+        android:text="@string/app_name"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/top_margin"
+        android:layout_height="wrap_content" />
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvCart"
         android:layout_width="match_parent"
+        android:layout_above="@+id/tvTotal"
         android:background="@color/colorGray"
+
         android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
-</LinearLayout>
+
+</RelativeLayout>

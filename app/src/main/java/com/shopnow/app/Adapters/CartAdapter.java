@@ -43,7 +43,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         holder.ivProduct.setDefaultImageResId(R.drawable.images_not_available);
         holder.ivProduct.setErrorImageResId(R.drawable.images_not_available);
         holder.tvProductName.setText(cartArrayList.get(position).getProductname());
-        holder.tvProductPrice.setText("Rs." + cartArrayList.get(position).getPrice() + " x " + cartArrayList.get(position).getProductCount());
+        holder.tvProductPrice.setText("Rs." + cartArrayList.get(position).getPrice());
         holder.tvVendorName.setText(cartArrayList.get(position).getVendorname());
         holder.tvVendorAddress.setText(cartArrayList.get(position).getVendoraddress());
         holder.btnCallVender.setOnClickListener(new View.OnClickListener() {
